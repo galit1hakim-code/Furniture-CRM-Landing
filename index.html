@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture CRM - Assistant Manager</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo">
+            <span>🪑</span> Modern Furniture CRM
+        </div>
+        <ul class="nav-links">
+            <li class="nav-item active" data-tab="dashboard">
+                <span>📊</span> לוח בקרה
+            </li>
+            <li class="nav-item" data-tab="leads">
+                <span>👥</span> ניהול לידים
+            </li>
+            <li class="nav-item" data-tab="catalog">
+                <span>🖼️</span> קטלוג מדיה
+            </li>
+            <li class="nav-item" data-tab="assistant">
+                <span>🤖</span> הגדרות עוזר אישי
+            </li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <div class="header-title">
+                <h1 id="tab-title">לוח בקרה</h1>
+                <p>שלום, הנה סקירה של העסק שלך היום</p>
+            </div>
+            <div class="header-actions">
+                <button class="btn btn-primary" id="start-sim-btn">הפעל סימולציית צ'אט</button>
+            </div>
+        </header>
+
+        <!-- Dashboard Tab -->
+        <div id="dashboard" class="tab-content active">
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>לידים חדשים</h3>
+                    <p style="font-size: 2rem; font-weight: 700; margin-top: 1rem;">12</p>
+                    <p style="color: var(--accent);">+20% מהשבוע שעבר</p>
+                </div>
+                <div class="card">
+                    <h3>שיחות פעילות</h3>
+                    <p style="font-size: 2rem; font-weight: 700; margin-top: 1rem;">5</p>
+                    <p style="color: var(--text-muted);">העוזר האישי מטפל בכולן</p>
+                </div>
+                <div class="card">
+                    <h3>מכירות פוטנציאליות</h3>
+                    <p style="font-size: 2rem; font-weight: 700; margin-top: 1rem;">₪45,000</p>
+                    <p style="color: var(--primary);">לידים חמים</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leads Tab -->
+        <div id="leads" class="tab-content">
+            <div class="card">
+                <h3>לידים אחרונים מווצאפ</h3>
+                <div style="margin-top: 1rem;">
+                    <table style="width: 100%; border-collapse: collapse; text-align: right;">
+                        <thead>
+                            <tr style="border-bottom: 1px solid var(--border); color: var(--text-muted);">
+                                <th style="padding: 1rem;">שם הלקוח</th>
+                                <th style="padding: 1rem;">סטטוס</th>
+                                <th style="padding: 1rem;">זמן</th>
+                                <th style="padding: 1rem;">פעולה</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 1rem;">ישראל ישראלי</td>
+                                <td style="padding: 1rem;"><span style="color: var(--primary);">חם (אחרי תמונות צבע)</span></td>
+                                <td style="padding: 1rem;">לפני 5 דקות</td>
+                                <td style="padding: 1rem;"><button class="btn btn-primary" style="padding: 0.4rem 1rem;">צפה בצ'אט</button></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 1rem;">שרה כהן</td>
+                                <td style="padding: 1rem;"><span style="color: var(--accent);">חדש (נשלחו דגמים)</span></td>
+                                <td style="padding: 1rem;">לפני 15 דקות</td>
+                                <td style="padding: 1rem;"><button class="btn btn-primary" style="padding: 0.4rem 1rem;">צפה בצ'אט</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Catalog Tab -->
+        <div id="catalog" class="tab-content">
+            <div class="catalog-section">
+                <h2 style="margin-bottom: 1.5rem;">דגמי רהיטים (10 תמונות)</h2>
+                <div class="catalog-grid" id="models-grid">
+                    <!-- JS will generate 10 boxes -->
+                </div>
+            </div>
+            <div class="catalog-section" style="margin-top: 3rem;">
+                <h2 style="margin-bottom: 1.5rem;">פלטות צבעים (3 תמונות)</h2>
+                <div class="catalog-grid" id="colors-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    <!-- JS will generate 3 boxes -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Assistant Tab -->
+        <div id="assistant" class="tab-content">
+            <div class="card" style="max-width: 600px;">
+                <h3>הגדרות עוזר אישי</h3>
+                <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; color: var(--text-muted);">טון הדיבור</label>
+                        <select style="width: 100%; padding: 0.75rem; border-radius: 8px; background: var(--glass); border: 1px solid var(--border); color: white;">
+                            <option>יוקרתי ומנומס</option>
+                            <option>חברותי וקליל</option>
+                            <option>מקצועי וענייני</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; color: var(--text-muted);">זרימת הודעות</label>
+                        <p style="font-size: 0.9rem; color: var(--primary);">דגמים -> צבעים -> חימום ליד</p>
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; color: var(--text-muted);">הודעת פתיחה</label>
+                        <textarea style="width: 100%; padding: 0.75rem; border-radius: 8px; background: var(--glass); border: 1px solid var(--border); color: white; height: 100px;">שלום! אני העוזר האישי של חנות הרהיטים המודרנית שלנו. אשמח להראות לך את הדגמים החדשים שלנו...</textarea>
+                    </div>
+                    <button class="btn btn-primary">שמור הגדרות</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Simulator Modal (Hidden by default) -->
+        <div id="chat-modal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 100; align-items: center; justify-content: center; backdrop-filter: blur(5px);">
+            <div class="card chat-container" style="width: 400px; height: 600px; padding: 0;">
+                <div style="background: var(--glass); padding: 1rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <div style="width: 40px; height: 40px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: black; font-weight: bold;">AI</div>
+                        <div>
+                            <div style="font-weight: bold;">העוזר האישי</div>
+                            <div style="font-size: 0.7rem; color: #4ade80;">פעיל כעת</div>
+                        </div>
+                    </div>
+                    <button id="close-chat" style="background: none; border: none; color: white; cursor: pointer; font-size: 1.5rem;">&times;</button>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Messages will appear here -->
+                </div>
+                <div style="padding: 1rem; border-top: 1px solid var(--border); display: flex; gap: 0.5rem;">
+                    <input type="text" placeholder="הקלד הודעה..." style="flex: 1; background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; color: white;">
+                    <button class="btn btn-primary" style="padding: 0.5rem 1rem;">שלח</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מבצע בלעדי: כורסת החלומות שלך ב-399 ש"ח</title>
+    <link rel="stylesheet" href="styles/landing.css">
+</head>
+<body>
+    <header class="container" style="padding: 2rem 0;">
+        <div style="font-size: 1.5rem; font-weight: 800; color: var(--secondary);">MODERN <span style="color: var(--primary);">CHAIR</span></div>
+    </header>
+
+    <section class="hero container">
+        <div class="hero-content">
+            <h1>כורסה בעיצוב <span class="highlight">אישי ומודרני</span></h1>
+            <p>השדרג המושלם לסלון שלך. נוחות בלתי מתפשרת, עיצוב נקי ואיכות שתלווה אותך לשנים.</p>
+            
+            <div class="price-tag">
+                רק ב- <span>₪399</span>
+            </div>
+            
+            <div style="margin-top: 1rem;">
+                <a href="#order" class="cta-button">
+                    <span>📱</span> להזמנה מהירה בווצאפ
+                </a>
+            </div>
+            <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #94a3b8;">*המבצע לזמן מוגבל | משלוחים לכל הארץ</p>
+        </div>
+
+        <div class="hero-image">
+            <div class="armchair-placeholder" id="main-image">
+                <!-- Placeholder for user's image -->
+            </div>
+        </div>
+    </section>
+
+    <section class="customization">
+        <div class="container">
+            <h2>בחרו את הצבע שלכם</h2>
+            <p style="margin-bottom: 2rem; color: #64748b;">אנחנו מייצרים את הכורסא בדיוק לפי הטעם שלכם</p>
+            
+            <div class="color-grid">
+                <div class="color-option" style="background: #1e293b;" title="כחול עמוק"></div>
+                <div class="color-option" style="background: #d4af37;" title="זהב מלכותי"></div>
+                <div class="color-option" style="background: #64748b;" title="אפור בטון"></div>
+                <div class="color-option" style="background: #10b981;" title="ירוק אמרלד"></div>
+                <div class="color-option" style="background: #f43f5e;" title="אדום יין"></div>
+            </div>
+            
+            <p id="color-name" style="font-weight: 600; color: var(--secondary); height: 1.5rem;"></p>
+        </div>
+    </section>
+
+    <section class="container" style="padding: 6rem 0;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;">
+            <div style="text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🛋️</div>
+                <h3>נוחות מקסימלית</h3>
+                <p>ספוג כחול איכותי ששומר על הצורה לאורך זמן.</p>
+            </div>
+            <div style="text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🎨</div>
+                <h3>התאמה אישית</h3>
+                <p>מגוון רחב של בדים וצבעים לבחירה.</p>
+            </div>
+            <div style="text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🚚</div>
+                <h3>אספקה מהירה</h3>
+                <p>משלוח עד הבית תוך 7 ימי עסקים בלבד.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="cta">
+        <div class="container">
+            <div style="background: var(--secondary); padding: 4rem; border-radius: 30px; color: white;">
+                <h2 style="font-size: 3rem; margin-bottom: 1.5rem;">מוכנים להתחדש?</h2>
+                <p style="font-size: 1.25rem; margin-bottom: 3rem; opacity: 0.8;">העוזר האישי שלנו מחכה לכם בווצאפ כדי לעזור לכם לבחור את הצבע המושלם.</p>
+                <a href="#" class="cta-button" style="background: #25d366; color: white; box-shadow: 0 10px 15px -3px rgba(37, 211, 102, 0.3);">
+                    <span>💬</span> דברו איתנו בווצאפ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <p>&copy; 2026 כל הזכויות שמורות לחנות הרהיטים המודרנית</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.color-option').forEach(option => {
+            option.addEventListener('click', () => {
+                document.querySelectorAll('.color-option').forEach(o => o.classList.remove('active'));
+                option.classList.add('active');
+                document.getElementById('color-name').textContent = 'נבחר: ' + option.title;
+                
+                // Simulate image color change (if we had images)
+                const mainImage = document.getElementById('main-image');
+                mainImage.style.backgroundColor = option.style.backgroundColor;
+                mainImage.style.opacity = '0.8';
+            });
+        });
+    </script>
+</body>
+</html>
