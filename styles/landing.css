@@ -61,15 +61,17 @@ header {
 
 .nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 1rem;
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 900;
     color: var(--secondary);
     letter-spacing: -1px;
+    text-align: center;
 }
 
 .logo span { color: var(--primary); }
