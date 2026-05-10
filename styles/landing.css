@@ -70,7 +70,7 @@ header {
 .logo {
     font-size: 2.2rem;
     font-weight: 900;
-    color: var(--secondary);
+    color: #fbbf24; /* Yellow */
     letter-spacing: -1px;
     text-align: center;
 }
@@ -98,7 +98,7 @@ header {
     font-weight: 900;
     line-height: 1.1;
     margin-bottom: 2rem;
-    color: var(--secondary);
+    color: #fbbf24; /* Yellow */
 }
 
 .hero-text .badge {
