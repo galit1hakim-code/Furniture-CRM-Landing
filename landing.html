@@ -3,104 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מבצע בלעדי: כורסת החלומות שלך ב-399 ש"ח</title>
+    <title>פאלאס גלריה | כורסת הפרימיום שלך ב-399 ש"ח בלבד</title>
     <link rel="stylesheet" href="styles/landing.css">
 </head>
 <body>
-    <header class="container" style="padding: 2rem 0;">
-        <div style="font-size: 1.5rem; font-weight: 800; color: var(--secondary);">MODERN <span style="color: var(--primary);">CHAIR</span></div>
+    <header>
+        <div class="container nav">
+            <div class="logo">פאלאס <span>גלריה</span></div>
+            <div style="display: flex; gap: 2rem; font-weight: 700;">
+                <a href="#features" style="text-decoration: none; color: inherit;">יתרונות</a>
+                <a href="#why-us" style="text-decoration: none; color: inherit;">למה אנחנו?</a>
+                <a href="#order" style="text-decoration: none; color: inherit;">הזמנה</a>
+            </div>
+        </div>
     </header>
 
-    <section class="hero container">
-        <div class="hero-content">
-            <h1>כורסה בעיצוב <span class="highlight">אישי ומודרני</span></h1>
-            <p>השדרג המושלם לסלון שלך. נוחות בלתי מתפשרת, עיצוב נקי ואיכות שתלווה אותך לשנים.</p>
-            
-            <div class="price-tag">
-                רק ב- <span>₪399</span>
-            </div>
-            
-            <div style="margin-top: 1rem;">
-                <a href="#order" class="cta-button">
-                    <span>📱</span> להזמנה מהירה בווצאפ
-                </a>
-            </div>
-            <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #94a3b8;">*המבצע לזמן מוגבל | משלוחים לכל הארץ</p>
-        </div>
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text reveal">
+                <span class="badge">מבצע השקה לזמן מוגבל</span>
+                <h1>הנוחות שחיכית לה <br>במחיר שלא יחזור</h1>
+                <p>עיצוב מודרני מינימליסטי שמשתלב בכל סלון. כורסה שהיא גם הצהרה עיצובית וגם המקום המועדף עליך בבית.</p>
+                
+                <div class="price-box">
+                    <div class="main-price"><span>₪</span>399</div>
+                    <div class="old-price">₪890</div>
+                </div>
 
-        <div class="hero-image">
-            <div class="armchair-placeholder" id="main-image">
-                <!-- Placeholder for user's image -->
+                <a href="#order" class="btn-xl">הזמן עכשיו בווצאפ</a>
+                <p style="font-size: 0.9rem; margin-top: 1rem; color: var(--text-muted);">*אחריות מלאה ל-12 חודשים | משלוח מהיר</p>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="assets/images/hero-armchair.png" alt="כורסת פרימיום סגולה" onerror="this.src='https://via.placeholder.com/600x600/7c3aed/ffffff?text=Your+Armchair+Here'">
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="customization">
+    <section class="features" id="features">
         <div class="container">
-            <h2>בחרו את הצבע שלכם</h2>
-            <p style="margin-bottom: 2rem; color: #64748b;">אנחנו מייצרים את הכורסא בדיוק לפי הטעם שלכם</p>
-            
-            <div class="color-grid">
-                <div class="color-option" style="background: #4c1d95;" title="סגול חציל"></div>
-                <div class="color-option" style="background: #7c3aed;" title="סגול מלכותי"></div>
-                <div class="color-option" style="background: #a78bfa;" title="לילך רך"></div>
-                <div class="color-option" style="background: #ddd6fe;" title="לבנדר בהיר"></div>
-                <div class="color-option" style="background: #1e1b4b;" title="סגול לילה"></div>
+            <div class="section-title reveal">
+                <h2>למה הכורסה שלנו?</h2>
+                <p style="color: var(--text-muted); font-size: 1.2rem; margin-top: 1rem;">חשבנו על כל פרט קטן כדי להעניק לך את חוויית הישיבה המושלמת</p>
             </div>
-            
-            <p id="color-name" style="font-weight: 600; color: var(--secondary); height: 1.5rem;"></p>
-        </div>
-    </section>
-
-    <section class="container" style="padding: 6rem 0;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;">
-            <div style="text-align: center;">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">🛋️</div>
-                <h3>נוחות מקסימלית</h3>
-                <p>ספוג כחול איכותי ששומר על הצורה לאורך זמן.</p>
-            </div>
-            <div style="text-align: center;">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">🎨</div>
-                <h3>התאמה אישית</h3>
-                <p>מגוון רחב של בדים וצבעים לבחירה.</p>
-            </div>
-            <div style="text-align: center;">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">🚚</div>
-                <h3>אספקה מהירה</h3>
-                <p>משלוח עד הבית תוך 7 ימי עסקים בלבד.</p>
+            <div class="feature-grid">
+                <div class="feature-card reveal" style="animation-delay: 0.2s;">
+                    <span class="feature-icon">💎</span>
+                    <h3>חומרים איכותיים</h3>
+                    <p>בד קטיפה נעים למגע, עמיד וקל לניקוי. ספוג בדרגת קושי אופטימלית ששומר על הצורה.</p>
+                </div>
+                <div class="feature-card reveal" style="animation-delay: 0.4s;">
+                    <span class="feature-icon">🎨</span>
+                    <h3>התאמה אישית</h3>
+                    <p>מגוון צבעים וטקסטורות לבחירה. אנחנו מייצרים כל כורסה בהתאמה אישית לטעם שלך.</p>
+                </div>
+                <div class="feature-card reveal" style="animation-delay: 0.6s;">
+                    <span class="feature-icon">🛡️</span>
+                    <h3>עמידות לשנים</h3>
+                    <p>שלדת עץ מלא מחוזקת שמבטיחה שהכורסה תשמש אותך לאורך שנים רבות בבטחה.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="order" class="cta">
+    <section class="why-us" id="why-us">
+        <div class="container why-grid">
+            <div class="why-image">
+                <img src="https://via.placeholder.com/500x400/1e1b4b/ffffff?text=Production+Quality" style="width: 100%; border-radius: 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+            </div>
+            <div class="why-text reveal">
+                <h2>האיכות שמעבר למחיר</h2>
+                <p>אנחנו לא מאמינים שעיצוב פרימיום צריך לעלות הון. על ידי ייצור מקומי ומכירה ישירה מהיצרן לצרכן, אנחנו חוסכים לך את פערי התיווך.</p>
+                <ul class="why-list">
+                    <li>ייצור כחול-לבן קפדני</li>
+                    <li>בקרת איכות על כל מוצר שיוצא מהמפעל</li>
+                    <li>שירות לקוחות אישי וזמין</li>
+                    <li>אפשרות להחלפת צבעים גם לאחר ההזמנה</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner reveal" id="order">
         <div class="container">
-            <div style="background: var(--secondary); padding: 4rem; border-radius: 30px; color: white;">
-                <h2 style="font-size: 3rem; margin-bottom: 1.5rem;">מוכנים להתחדש?</h2>
-                <p style="font-size: 1.25rem; margin-bottom: 3rem; opacity: 0.8;">העוזר האישי שלנו מחכה לכם בווצאפ כדי לעזור לכם לבחור את הצבע המושלם.</p>
-                <a href="#" class="cta-button" style="background: #25d366; color: white; box-shadow: 0 10px 15px -3px rgba(37, 211, 102, 0.3);">
-                    <span>💬</span> דברו איתנו בווצאפ
-                </a>
+            <h2>מוכנים לשדרג את הסלון?</h2>
+            <p style="font-size: 1.5rem; margin-bottom: 3rem; opacity: 0.9;">הצטרפו למאות לקוחות מרוצים שכבר נהנים מנוחות מקסימלית במחיר מנצח.</p>
+            <a href="#" class="btn-xl" style="background: #25d366;">דברו איתנו בווצאפ עכשיו</a>
+            <div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+                זמינים למענה אנושי מהיר | ייעוץ חינם בבחירת צבעים
             </div>
         </div>
     </section>
 
-    <footer class="container">
-        <p>&copy; 2026 כל הזכויות שמורות לחנות הרהיטים המודרנית</p>
+    <footer style="padding: 4rem 0; text-align: center; color: var(--text-muted);">
+        <div class="container">
+            <div class="logo" style="margin-bottom: 1rem;">פאלאס <span>גלריה</span></div>
+            <p>&copy; 2026 כל הזכויות שמורות לחנות הרהיטים המודרנית</p>
+        </div>
     </footer>
 
     <script>
-        document.querySelectorAll('.color-option').forEach(option => {
-            option.addEventListener('click', () => {
-                document.querySelectorAll('.color-option').forEach(o => o.classList.remove('active'));
-                option.classList.add('active');
-                document.getElementById('color-name').textContent = 'נבחר: ' + option.title;
-                
-                // Simulate image color change (if we had images)
-                const mainImage = document.getElementById('main-image');
-                mainImage.style.backgroundColor = option.style.backgroundColor;
-                mainImage.style.opacity = '0.8';
+        // Simple scroll reveal animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal');
+                }
             });
-        });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
